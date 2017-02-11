@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  aspnetcore-docker:
+    image: user/aspnetcore-docker${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80"
